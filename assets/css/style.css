@@ -10,7 +10,10 @@
   --color-accent-100: #E7EAF3;
   --color-accent-50: #F4F6FA;
   /* Marinho claro — usado apenas em ícones sobre fundos escuros */
-  --color-primary-light: #22366E;
+  --color-primary-light: #2A4185;
+  /* Face clara e Dobra — faces do barco (manual de marca) */
+  --color-face: #2A4185;
+  --color-fold: #D3DAEA;
 
   /* Verde — destaque secundário (a cor do cursor da logo) */
   --color-green: #17A37A;
@@ -22,7 +25,7 @@
   --color-dark-900: #0A1128;
   --color-dark-800: #121B3A;
   --color-dark-700: #1B2A54;
-  --color-dark-600: #22366E;
+  --color-dark-600: #2A4185;
 
   --color-text: #15254F;
   --color-text-muted: #6B7385;
@@ -99,7 +102,7 @@ button { font: inherit; cursor: pointer; }
 .text-accent { color: var(--color-green); }
 
 .eyebrow {
-  color: var(--color-green);
+  color: var(--color-face);
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -313,7 +316,7 @@ section { padding: 96px 0; }
   color: #fff;
 }
 .trust-bar p { text-align: center; font-size: 1rem; color: #D8D9DC; }
-.trust-bar strong { color: var(--color-green); }
+.trust-bar strong { color: #fff; }
 
 /* ============================================
    Services
@@ -351,8 +354,8 @@ section { padding: 96px 0; }
   width: 52px;
   height: 52px;
   border-radius: var(--radius-sm);
-  background: var(--color-green-100);
-  color: var(--color-green);
+  background: var(--color-accent);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,7 +385,7 @@ section { padding: 96px 0; }
 }
 
 /* ============================================
-   Promise (Flexíveis no plano. Inegociáveis na qualidade.)
+   Como trabalhamos (Simples por fora. Sólido por dentro.)
 ============================================ */
 .promise {
   background: var(--color-dark-900);
@@ -390,6 +393,9 @@ section { padding: 96px 0; }
 }
 .promise .section-head { max-width: 760px; }
 .promise .section-subtitle { color: #C9CCD4; }
+.promise .eyebrow { color: var(--color-fold); }
+.promise .btn-primary { background: #fff; color: var(--color-accent); }
+.promise .btn-primary:hover { background: var(--color-fold); }
 
 .promise-grid {
   display: grid;
@@ -415,7 +421,7 @@ section { padding: 96px 0; }
 .promise-col ul { display: flex; flex-direction: column; gap: 12px; }
 .promise-col li { position: relative; padding-left: 28px; color: #D8D9DC; }
 .promise-col li::before {
-  content: "↔";
+  content: "→";
   position: absolute;
   left: 0;
   color: #8B93A7;
@@ -471,7 +477,7 @@ section { padding: 96px 0; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-green);
+  color: var(--color-face);
   margin-bottom: 10px;
 }
 .case-body h3 { font-size: 1.1rem; margin-bottom: 10px; }
@@ -573,7 +579,7 @@ section { padding: 96px 0; }
 .faq-icon::before, .faq-icon::after {
   content: "";
   position: absolute;
-  background: var(--color-green);
+  background: var(--color-accent);
   border-radius: 2px;
   top: 50%;
   left: 50%;
@@ -606,15 +612,16 @@ section { padding: 96px 0; }
 .contact-details { margin-top: 28px; display: flex; flex-direction: column; gap: 16px; }
 .contact-details li { display: flex; align-items: center; gap: 12px; font-weight: 500; }
 .contact-icon {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: var(--color-green-100);
-  color: var(--color-green);
+  background: var(--color-accent);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  font-size: 20px;
 }
 
 .contact-form {
